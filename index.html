@@ -5,8 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style.css" rel="stylesheet" />
-    <script src="./app.js"></script>
+    <script src="./app.js" defer></script>
     <title>rok papor skizors</title>
   </head>
-  <body></body>
+
+  <body>
+    <div class="bg-image">
+      <div class="bg-image-backdrop"></div>
+    </div>
+
+    <div class="main-container flex-column">
+      <div class="game-container flex-column">
+        <header class="flex-column">
+          <h1 class="header-text">rok papor skizors</h1>
+          <p class="header-subtext">fight the computer for rep</p>
+          <div class="game-score-container flex-row">
+            <p class="game-score-prefix">REP:</p>
+            <p class="game-score-value flex-row">0</p>
+          </div>
+        </header>
+
+        <p class="game-result"></p>
+
+        <div class="ai-container flex-column">
+          <p class="ai-title">Computer</p>
+          <div class="ai-choice flex-row">. . .</div>
+        </div>
+
+        <div class="player-container flex-column">
+          <p class="game-buttons-title">YOU</p>
+          <div class="game-buttons flex-row">
+            <button class="game-button rock-button">ROK</button>
+            <button class="game-button paper-button">PAPOR</button>
+            <button class="game-button scissors-button">SKIZORS</button>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>Created by ssnd.</p>
+      </footer>
+    </div>
+  </body>
 </html>
